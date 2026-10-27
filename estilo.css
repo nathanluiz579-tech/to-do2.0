@@ -1,0 +1,40 @@
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    background: #007bff;
+    color: white;
+}
+button:hover {
+    opacity: 0.8;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th {
+    background: #007bff;
+    color: white;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Estilo para o desafio de concluir tarefa */
+.completed td {
+    text-decoration: line-through;
+    color: #9e9e9e !important;
+}

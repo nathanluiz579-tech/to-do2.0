@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Tarefas</title>
+
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Tarefas</h1>
+        <p class="center subtitle">Organizando seu dia!!</p>
+
+        <ul class="center info-list" style="list-style: none;">
+            <li>
+                <i class="small material-icons vertical-align-middle">event_note</i>
+                <strong>Tarefas Importantes!!</strong>
+            </li>
+            <li>Não esqueça !!!</li>
+        </ul>
+
+        <div class="form-group">
+            <label for="campoTitulo">Título:</label>
+            <input type="text" id="campoTitulo" class="campoTitulo" placeholder="Ex: Estudar JavaScript" />
+            
+            <label for="campoObs">Observações:</label> 
+            <input type="text" id="campoObs" class="campoObs" placeholder="Ex: Ler capítulo 3 do livro" />
+
+            <label for="campoPrioridade">Prioridade:</label>
+            <select id="campoPrioridade" class="campoPrioridade">
+                <option value="" disabled selected>Selecione a prioridade</option>
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
+            </select>
+        </div>
+
+        <div class="divBotao">
+            <button id="botao">Adicionar Tarefa</button>
+        </div>
+
+        <!-- Mensagem de feedback (sucesso/erro) -->
+        <p id="mensagem" style="font-weight: bold; margin-top: 15px; min-height: 24px;"></p>
+
+        <section class="tarefas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tarefa</th>
+                        <th>Observações</th>
+                        <th>Prioridade</th>
+                        <th>Concluir</th>
+                        <th>Apagar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- As linhas de tarefas serão inseridas dinamicamente via JS -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- Scripts (jQuery, Materialize JS e Script Principal) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="
